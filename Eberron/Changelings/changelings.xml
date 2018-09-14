@@ -162,5 +162,5 @@
       <select type="Proficiency" name="Tool Proficiency (Divergent Persona)" supports="Artisan tools"/>
     </rules>
   </element>
-
+  
 </elements>
