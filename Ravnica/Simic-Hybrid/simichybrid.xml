@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Simic Hybrid</name>
+    <description></description>
+    <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/guildmasters-guide-ravnica">Wizards of the Coast</author>
+    <update version="0.1.0">
+      <file name="simichybrid.index" url="https://raw.githubusercontent.com/TheG0ph3rN1nja/Simic-Hybrid/master/simichybrid.xml" />
+    </update>
+  </info>
+  <element name="Simic Hybrid" type="Race" source="Guildmasters' Guide to Ravnica" id="ID_RACE_SIMIC_HYBRID">
+    <supports />
+    <requirements />
+    <description>
+      <p class="flavor">The Simic Combine uses magic to fuse different life forms together. In recent years, they have extended this research to humanoid subjects, magically transferring the traits of various animals into humans, elves, and vedalken. The goal of the so-called Guardian Project is to build a Simic army of superior soldiers, perfectly adapted to a variety of combat situations. These hyper-evolved specimens are called Simic hybrids, though they sometimes call themselves guardians.</p>
+
+      <h4>EXTENSIVE ADAPTATION</h4>
+      <p>Simic hybrids share many of the characteristics of their original race, including their basic physical form. Human hybrids are the most versatile, filling a variety of roles. Agile elf hybrids retain the ability to see in the darkness, making them ideal as spies, scouts, and infiltrators. And vedalken hybrids possess the same calculating intellect as other vedalken, making them superior tacticians, strategists, and spellcasters.</p>
+      <p class="indent">Hybrids' biological enhancements can change their appearance drastically. All hybrids possess some physical characteristics of animals, mostly aquatic and reptilian creatures. These include crab claws, squid tentacles, wings that look like mays or fins, translucent or camouflaged skin, or sharklike maws filled with sharp teeth.</p>
+      <p class="indent">Hybrids are the product of Simic magic. It's not impossible for a hybrid to leave the Simic Combine and join another guild, but the Simic would consider the hybrid a deserter and the new guild might never fully welcome a hybrid who could easily be a simic spy.</p>
+
+      <h4>HYBRID NAMES</h4>
+      <p>A hybrid usually bears the name given by their human, elf, or vedalken parents. But some hybrids assume a new name after their transformation, a name chosen by themselves or by those who transformed them.</p>
+
+      <h4>SIMIC HYBRID TRAITS</h4>
+      <p>Your hybrid character has the following racial traits</p>
+      <p>
+        <span class="feature">Ability Score Increase.</span>Your Constitution score increases by 2, and one other ability score of your choice increases by 1.
+        <br />
+        <span class="feature">Age.</span>Hybrids begin their lives as adult humans, elves, or vedalken. They exhibit signs of slightly accelerated aging, so their maximum lifespans are probably reduced somewhat, but the Guardian Project has not been operating long enough to observe the full effect of this phenomenon.
+        <br />
+        <span class="feature">Alignment.</span>Most hybrids share the generally neutral outlook of the Simic Combine as a whole. They are more interested in scientific research and the standing of their guid than in moral or ethical question. However, those who leave the Combine often do so because their philosophical outlook and alignment are more in line with a different guild's.
+        <br />
+        <span class="feature">Size.</span>Your size is Medium, within the normal range of your humanoid base race.
+        <br />
+        <span class="feature">Speed.</span>Your base walking speed is 30 feet.
+        <br />
+        <span class="feature">Darkvision.</span>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey.
+        <br />
+        <span class="feature">Animal Enhancement.</span>Your body has been altered to incorporate certain animal enhancements now and a second enhancement at 5th level.
+        <br />
+        <span class="feature">Languages.</span>You can speak, read, and write Common and Elvish
+        <br />
+      </p>
+    </description>
+
+    <sheet display="false" />
+    <setters />
+    <rules>
+      <stat name="Constitution" value="+2"/>
+      <select type="Racial Trait" name="Ability Score Increase (Simic Hybrid)" supports="Simic Hybrid" number="1" />
+      <stat name="Speed" value="+30"/>
+      <grant type="Size" name="ID_SIZE_MEDIUM" />
+      <grant type="Language" name="ID_LANGUAGE_COMMON" />
+      <grant type="Language" name="ID_LANGUAGE_ELVISH" />
+      <grant type="Vision" name="ID_VISION_DARKVISION" />
+      <select type="Racial Trait" name="Animal Enhancement (1st Level)" supports="1st Level" number="1" />
+      <select type="Racial Trait" name="Animal Enhancement (5th Level)" supports="5th Level" number="1" level="5" />
+    </rules>
+  </element>
+
+  <element name="Ability Score Increase (Strength)" type="Racial Trait" source="Guildmasters' Guide to Ravnica" id="ID_RACIAL_TRAIT_SIMIC_HYBRID_STRENGTH">
+    <supports>Simic Hybrid</supports>
+    <requirements />
+    <description>
+      <p>Your Strength increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="Strength" value="+1"/>
+    </rules>
+  </element>
+
+  <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Guildmasters' Guide to Ravnica" id="ID_RACIAL_TRAIT_SIMIC_HYBRID_DEXTERITY">
+    <supports>Simic Hybrid</supports>
+    <requirements />
+    <description>
+      <p>Your Dexterity increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="Dexterity" value="+1"/>
+    </rules>
+  </element>
+
+  <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Guildmasters' Guide to Ravnica" id="ID_RACIAL_TRAIT_SIMIC_HYBRID_INTELLIGENCE">
+    <supports>Simic Hybrid</supports>
+    <requirements />
+    <description>
+      <p>Your Intelligence increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="Intelligence" value="+1"/>
+    </rules>
+  </element>
+
+  <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Guildmasters' Guide to Ravnica" id="ID_RACIAL_TRAIT_SIMIC_HYBRID_WISDOM">
+    <supports>Simic Hybrid</supports>
+    <requirements />
+    <description>
+      <p>Your Wisdom increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="Wisdom" value="+1"/>
+    </rules>
+  </element>
+
+  <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Guildmasters' Guide to Ravnica" id="ID_RACIAL_TRAIT_SIMIC_HYBRID_CHARISMA">
+    <supports>Simic Hybrid</supports>
+    <requirements />
+    <description>
+      <p>Your CHarisma increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="Charisma" value="+1"/>
+    </rules>
+  </element>
+
+  <element name="Animal Enhancement 1st Level (Manta Glide)" type="Racial Trait" source="Guildmasters' Guide to Ravnica" id="ID_RACIAL_TRAIT_SIMIC_HYBRID_MANTA_GLIDE">
+    <supports>1st Level</supports>
+    <requirements />
+    <description>
+      <p>Your ray-like wings can slow your fall and allow you to glide. When you fall and aren't incapacitated, you can subtract up to 100 feet from the fall when calculating falling damage, and you can move up to 2 feet horizontally for every 1 foot you descend.</p>
+    </description>
+    <rules />
+  </element>
+
+  <element name="Animal Enhancement 1st Level (Nimble Climber)" type="Racial Trait" source="Guildmasters' Guide to Ravnica" id="ID_RACIAL_TRAIT_SIMIC_HYBRID_NIMBLE_CLIMBER">
+    <supports>1st Level</supports>
+    <requirements />
+    <description>
+      <p>You have a climbing speed equal to your walking speed.</p>
+    </description>
+    <rules />
+  </element>
+
+  <element name="Animal Enhancement 1st Level (Underwater Adaptation)" type="Racial Trait" source="Guildmasters' Guide to Ravnica" id="ID_RACIAL_TRAIT_SIMIC_HYBRID_UNDERWATER_ADAPTATION">
+    <supports>1st Level</supports>
+    <requirements />
+    <description>
+      <p>You can breathe air and water, and you have a swimming speed equal to your walking speed.</p>
+    </description>
+    <rules />
+  </element>
+
+  <element name="Animal Enhancement 5th Level (Grappling Appendages)" type="Racial Trait" source="Guildmasters' Guide to Ravnica" id="ID_RACIAL_TRAIT_SIMIC_HYBRID_GRAPPLING_APPENDAGES">
+    <supports>5th Level</supports>
+    <requirements level="5" />
+    <description>
+      <p>You have two special appendages growing alongside your arms. Choose whether they're both claws or tentacles. Each of these appendages is a natural weapon, which you can use to make unarmed strikes. If you hit with it, the target takes bludgeoning damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. Immediately after hitting, you can try to grapple the target as a bonus action. These appendages can't wield weapons, magic items, or other specialized equipment.</p>
+    </description>
+    <rules />
+  </element>
+
+  <element name="Animal Enhancement 5th Level (Carapace)" type="Racial Trait" source="Guildmasters' Guide to Ravnica" id="ID_RACIAL_TRAIT_SIMIC_HYBRID_CARAPACE">
+    <supports>5th Level</supports>
+    <requirements level="5" />
+    <description>
+      <p>Your skin in places is covered by a thick shell. You gain a +1 bonus to AC when you're not wearing heavy armor.</p>
+    </description>
+    <rules>
+      <stat name="AC" value="+1" />
+    </rules>
+  </element>
+
+  <element name="Animal Enhancement 5th Level (Acid Spit)" type="Racial Trait" source="Guildmasters' Guide to Ravnica" id="ID_RACIAL_TRAIT_SIMIC_HYBRID_ACID_SPIT">
+    <supports>5th Level</supports>
+    <requirements level="5" />
+    <description>
+      <p>As an action, you can spray a stream of acid from glands in your mouth, targeting one creature or object you can see within 30 feet of you. The target takse 2d10 acid damage unless it succeeds on a Dexterity saving throw against a DC equal to 8 + your constitution modifier + your proficiency bonus. THis damage increases by 1d10 when you reach 11th level&#40;3d10&#41; and 17th level&#40;4d10&#41;.</p>
+    </description>
+    <rules />
+  </element>

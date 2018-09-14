@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Viashino</name>
+    <description></description>
+    <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/guildmasters-guide-ravnica">Wizards of the Coast</author>
+    <update version="0.1.0">
+      <file name="viashino.index" url="https://raw.githubusercontent.com/TheG0ph3rN1nja/Viashino/master/viashino.xml" />
+    </update>
+  </info>
+  <element name="Viashino" type="Race" source="Guildmasters' Guide to Ravnica" id="ID_RACE_VIASHINO">
+    <supports />
+    <requirements />
+    <description>
+      <p class="flavor">Many reptiles derive their body warmth and energy from the sun, but the humanoid viashino are fueled by an inner fire of zeal. Open with their emotions, viashino can be hot-tempered, but they are also quick to their hissing laughter. And they easily form close bonds of friendships. They are fierce warriors and passionate advocates for their guilds and causes.</p>
+
+      <h4>SCALED SKIN AND TAIL BLADES</h4>
+      <p>Viashino resemble humanoid lizards covered in green, scaled skin and spiky protrusions. Their heads jut forward from their slender necks and bear huge mouth full of sharp teeth. Long, whiplike tails extend from their spines, lashing behind them-faster and faster as they grow more agitated. Their tails are tipped with bony blades they can use as weapons.</p>
+
+      <h4>FERVENT AND FIERY</h4>
+      <p>Viashino are fiercely emotional and often violent, and their wizards and sorcerers favor fire spells that reflect their inner fire. They are most common among the Gruul Clans, especially the Slizt clan. Occasionally they put their zealous fire to use in the service of higher ideals, joining  the Boros Legion. Other Viashino instead pursue careers in the Izzet League, where they find a special role wielding Izzet-designed flame-spewing scorchbringers.</p>
+      <p class="indent">Like fire itself, viashino are quick to leap from one situation to another, and they are frequently destructive in the process. They enjoy brawling and often cause more injury than intended, thanks to their teeth and bladed tails.</p>
+      <p class="indent">They're also easily distracted, jumping from one idea to another in an instant. Likewise, they're easily bored, and if nothing captures their attention, they'll do something interesting.</p>
+
+      <h4>VIASHINO NAMES</h4>
+      <p>Viashino accept, collect, and discard names freely, choosing names that fit their current sense of self or whim. Sometimes they'll string two or more names together, because they like they sound or because all the names feel meaningful and relevant at the time. As a result, members of other races often have a hard time keeping track of a viashino's name.</p>
+      <p>
+        <b>Viashino Names: </b>Aun, Bay, Bassisk, Cresh, Din, Essek, Fiksh, Gyan, Hsiska, Illati, Izka, Kyri, Liszik, Maush, Nyoser, Ossanash, Shekess, Skellek, Szil, Tenk, Tzia, Villi, Wyoryn, Yom, Ztash
+        <br />
+      </p>
+
+      <h4>VIASHINO TRAITS</h4>
+      <p>Your viashino character has the following traits.</p>
+      <p>
+        <span class="feature">Ability Score Increase.</span>Your Dexterity score increases by 2, and your Strength score increases by 1
+        <br />
+        <span class="feature">Age.</span>Viashino mature quickly, reaching adulthood in their early teens. They live violent lives and rarely die of old age, but they would rarely live past 60 anyway.
+        <br />
+        <span class="feature">Alignment.</span>Viashino strongly tend toward chaotic alignments. They have no particular inclination toward good or evil.
+        <br />
+        <span class="feature">Size.</span>Vishino are about as tall as humans, but they have lithe, wiry frames. Your size is Medium.
+        <br />
+        <span class="feature">Speed.</span>Your base walking speed is 30 feet.
+        <br />
+        <span class="feature">Bite.</span>Your fanged maw is a natural weapon, which you can use to make unarmed strikes. If you hit with it you deal 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.
+        <br />
+        <span class="feature">Lashing Tail.</span>Your semi-prehensile tail is tipped with a boney blade. Immediately after a creature within 5 feet of you deals damage to you with a melee attack, you can use your reaction to make an unarmed strike against that creature with your tail. If you hit, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.
+        <br />
+        <span class="feature">Wiry Frame.</span>You gain proficiency in the Acrobatics or the Stealth skill &#40;your choice&#41;.
+        <br />
+        <span class="feature">Languages.</span>You can speak, read, and write Common and Draconic.
+        <br />
+      </p>
+    </description>
+
+    <sheet display="false" />
+      <setters>
+        <set name="names" type="Viashino">Aun, Bay, Bassisk, Cresh, Din, Essek, Fiksh, Gyan, Hsiska, Illati, Izka, Kyri, Liszik, Maush, Nyoser, Ossanash, Shekess, Skellek, Szil, Tenk, Tzia, Villi, Wyoryn, Yom, Ztash</set>
+      </setters>
+      <rules>
+        <stat name="Dexterity" value="+2"/>
+        <stat name="Strength" value="+1"/>
+        <stat name="Speed" value="+30"/>
+        <grant type="Size" name="ID_SIZE_MEDIUM" />
+        <grant type="Language" name="ID_LANGUAGE_COMMON" />
+        <grant type="Language" name="ID_LANGUAGE_DRACONIC" />
+        <grant type="Racial Trait" name="ID_RACIAL_TRAIT_BITE" />
+        <grant type="Racial Trait" name="ID_RACIAL_TRAIT_LASHING_TAIL" />
+        <grant type="Racial Trait" name="ID_RACIAL_TRAIT_WIRY_FRAME" />
+      </rules>
+    </element>
+
+    <element name="Bite" type="Racial Trait" source="Guildmasters' Guide to Ravnica" id="ID_RACIAL_TRAIT_BITE">
+      <supports />
+      <description>
+        <p>Your fanged maw is a natural weapon, which you can use to make unarmed strikes. If you hit with it you deal 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+      </description>
+      <sheet display="false">
+        <description>Your fanged maw is a natural weapon, which you can use to make unarmed strikes. If you hit with it you deal 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</description>
+      </sheet>
+      <rules />
+    </element>
+
+    <element name="Lashing Tail" type="Racial Trait" source="Guildmasters' Guide to Ravnica" id="ID_RACIAL_TRAIT_LASHING_TAIL">
+      <supports />
+      <description>
+        <p>Your semi-prehensile tail is tipped with a boney blade. Immediately after a creature within 5 feet of you deals damage to you with a melee attack, you can use your reaction to make an unarmed strike against that creature with your tail. If you hit, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+      </description>
+      <sheet display="false">
+        <description>Your semi-prehensile tail is tipped with a boney blade. Immediately after a creature within 5 feet of you deals damage to you with a melee attack, you can use your reaction to make an unarmed strike against that creature with your tail. If you hit, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</description>
+      </sheet>
+      <rules />
+    </element>
+
+    <element name="Wiry Frame" type="Racial Trait" source="Guildmasters' Guide to Ravnica" id="ID_RACIAL_TRAIT_WIRY_FRAME">
+      <supports />
+      <description>
+        <p>You gain proficiency in the Acrobatics or the Stealth skill &#40;your choice&#41;.</p>
+      </description>
+      <sheet display="false">
+        <description>You gain proficiency in the Acrobatics or the Stealth skill &#40;your choice&#41;.</description>
+      </sheet>
+      <rules>
+        <select type="Proficiency" name="Wiry Frame" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_STEALTH" number="1" />
+      </rules>
+    </element>
+
+  </elements>

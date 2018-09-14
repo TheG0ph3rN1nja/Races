@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Vedalken</name>
+    <description></description>
+    <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/guildmasters-guide-ravnica">Wizards of the Coast</author>
+    <update version="0.1.0">
+      <file name="vedalken.index" url="https://raw.githubusercontent.com/TheG0ph3rN1nja/Vedalken/master/vedalken.xml" />
+    </update>
+  </info>
+  <element name="Vedalken" type="Race" source="Guildmasters' Guide to Ravnica" id="ID_RACE_VEDALKEN">
+    <supports />
+    <requirements />
+    <description>
+      <p class="flavor">Nothing is perfect-vedalken believe this and rejoice in it. Every imperfection is a chance for improvement, whether it's in law or science, and progress is an endless march toward a state of perfection that might never be reached. This leads vedalken to pursue their work with delighted enthusiasm, never deterred by setbacks and excited by every opportunity for improvement.</p>
+
+      <h4>COOL RATIONALITY</h4>
+      <p>Vedalken are tall and slender, standing almost a head taller than humans on average but weighing about the same. Their hairless skin covers a range of blue, from pale sky blue through bright azure to deep indigo, almost purple. Their eyes are darker shades of blue or violet. They lack external ears, and their noses are broad and flat.</p>
+      <p class="indent">As a rule, vedalken are gregarious in conversation. However, they are private concerning their personal lives, and they tend to engage more with ideas than with people. They form close friendships based on mutual interests or compelling disagreements, and their interactions focus on their thoughts about those issues rather than their feelings about them. To members of other races, vedalken often appear cold, even emotionless. That assessment isn't fair-they feel emotion every bit as vividly as other races, but they are skilled at not displaying it. Cool rationality guides their actions, they make and follow careful plans, and they are patient enough to do nothing at all when the ideal outcome relies on inaction.</p>
+
+      <h4>REASONING TOWARDS PERFECTION</h4>
+      <p>Their curious intellects and rational minds incline vedalken strongly toward membership in the Azorius Senate, the Simic Combine, and &#40;less often&#41; the Izzet League. Whatever their guild affiliation, they put their intelligence to use in crafting and improving things&#58; laws, procedures, and magical sciences.</p>
+      <p class="indent">Vedalken believe that the path toward the impossible goal of perfection is built with bricks of education, careful deliberation, and controlled experimentation.&#40;Their desire for close control to prevent disastrous mistakes makes them generally less inclined toward the Izzet League, where explosive mistakes are celebrated.&#41;Some vedalken direct their energy toward perfecting themselves, including by means of Simic bioengineering or through extensive study, while others focus on perfecting society through the careful crafting and application of laws.</p>
+
+      <h4>VEDALKEN NAMES</h4>
+      <p>Vedalken are given names at birth, but usually choose new names for themselves as part of their transition into adulthood. They rarely use their family names.</p>
+      <p>
+        <b>Male Names: </b>Aglar, Bellin, Dallid, Firellan, Kavin, Koplony, Lomar, Mathvan, Modar, Nebun, Nhillosh, Nitt, Otrovac, Ovlan, Pelener, Rill, Trivaz, Uldin, Yolov, Zataz
+        <br/>
+        <b>Female Names: </b>Azi, Barvisa, Brazia, Direll, Fainn, Griya, Hallia, Katrille, Kovel, Lilla, Mirela, Morai, Nedress, Ossya, Pierenn, Roya, Sestri, Triel, Uzana, Yaraghiya, Zlovol
+        <br/>
+      </p>
+
+      <h4>VEDALKEN TRAITS</h4>
+      <p>Your vedalken character has the following racial traits.</p>
+      <p>
+        <span class="feature">Ability Score Increase.</span>Your Intelligence score increases by 2, and your Wisdom score increases by 1.
+        <br />
+        <span class="feature">Age.</span>Vedalken mature at the same rate humans do, and most are expected to settle down into an adult life around age 40. Their lifespans are typically 350 to 500 years long.
+        <br />
+        <span class="feature">Alignment.</span>Vedalken are most often lawful and rarely evil.
+        <br />
+        <span class="feature">Size.</span>Vedalken are taller than humans but slenderer. They are usually 6 to 6.5 feet tall on average usually weigh less than 200 pounds. Your size is Medium.
+        <br />
+        <span class="feature">Speed.</span>Your base walking speed is 30 feet.
+        <br />
+        <span class="feature">Vedalken Dispassion.</span>You have advantage on all Intelligence, Wisdom, and Charisma saving throws.
+        <br />
+        <span class="feature">Tireless Precision.</span>You are proficient in one of the following skills of you choice: Arcana, History, Investigation, Medicine, Performance, or Sleight of Hand. You are also proficient with one tool of your choice.Whenever you make an ability check with the chosen skill or tool, roll a d4, and add the number rolled to the check's total.
+        <br />
+        <span class="feature">Languages.</span>You can speak, read, and write Common.
+        <br />
+      </p>
+    </description>
+
+    <sheet display="false" />
+      <setters>
+        <set name="names" type="male">Aglar, Bellin, Dallid, Firellan, Kavin, Koplony, Lomar, Mathvan, Modar, Nebun, Nhillosh, Nitt, Otrovac, Ovlan, Pelener, Rill, Trivaz, Uldin, Yolov, Zataz</set>
+        <set name="names" type="female">Azi, Barvisa, Brazia, Direll, Fainn, Griya, Hallia, Katrille, Kovel, Lilla, Mirela, Morai, Nedress, Ossya, Pierenn, Roya, Sestri, Triel, Uzana, Yaraghiya, Zlovol</set>
+      </setters>
+      <rules>
+        <stat name="Intelligence" value="+2"/>
+        <stat name="Wisdom" value="+1"/>
+        <stat name="Speed" value="+30"/>
+        <grant type="Size" name="ID_SIZE_MEDIUM" />
+        <grant type="Language" name="ID_LANGUAGE_COMMON" />
+        <grant type="Racial Trait" name="ID_RACIAL_TRAIT_VEDALKEN_DISPASSION" />
+        <grant type="Racial Trait" name="ID_RACIAL_TRAIT_TIRELESS_PRECISION" />
+      </rules>
+    </element>
+
+    <element name="Vedalken Dispassion" type="Racial Trait" source="Guildmasters' Guide to Ravnica" id="ID_RACIAL_TRAIT_VEDALKEN_DISPASSION">
+      <supports />
+      <description>
+        <p>You have advantage on all Intelligence, Wisdom, and Charisma saving throws.</p>
+      </description>
+      <sheet display="false">
+        <description>You have advantage on all Intelligence, Wisdom, and Charisma saving throws.</description>
+      </sheet>
+      <rules />
+    </element>
+
+    <element name="Tireless Precision" type="Racial Trait" source="Guildmasters' Guide to Ravnica" id="ID_RACIAL_TRAIT_TIRELESS_PRECISION">
+      <supports />
+      <description>
+        <p>You are proficient in one of the following skills of you choice: Arcana, History, Investigation, Medicine, Performance, or Sleight of Hand. You are also proficient with one tool of your choice.Whenever you make an ability check with the chosen skill or tool, roll a d4, and add the number rolled to the check's total.</p>
+      </description>
+      <sheet display="false">
+        <description>You are proficient in one of the following skills of you choice: Arcana, History, Investigation, Medicine, Performance, or Sleight of Hand. You are also proficient with one tool of your choice.Whenever you make an ability check with the chosen skill or tool, roll a d4, and add the number rolled to the check's total.</description>
+      </sheet>
+      <rules>
+        <select type="Proficiency" name="Tireless Precision" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" number="1" />
+      </rules>
+    </element>
+
+  </elements>
